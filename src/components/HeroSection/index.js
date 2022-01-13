@@ -24,8 +24,9 @@ const HeroSection = () => {
                     Sign up for a new account today and receive $250 in credit towards your next payment.
                 </HeroP>
                 <HeroBtnWrapper>
-                    <Button to="signup" onMouseEnter = {onHover} onMouseLeave = {onHover} primary = {1} dark = {1}   
-                      >
+                    <Button smooth={true} duration={500} 
+                            spy={true}
+                            exact="true"  to="signup" onMouseEnter = {onHover} onMouseLeave = {onHover} primary = {1} dark = {1}>
                         Get Started {hover ? <ArrowForward /> : <ArrowRight />}
                     </Button>
                 </HeroBtnWrapper>
